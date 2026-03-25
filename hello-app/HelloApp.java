@@ -1,38 +1,29 @@
 /**
- * HelloApp - UC7 - A simple Java application that greets multiple users by name
- * if provided as command-line arguments using the String.join() method, or defaults
- * to greeting "World" if no names
+ * HelloApp.java - A simple Java application that Displays "Hello, World!" to
+ * the console.
  *
- * UC 7: Display "Hello" with Multiple Command-Line Arguments using String.join() Method
- * or Default Message - The application should accept multiple names as command-line
- * arguments and display a personalized greeting for each user using the String.join()
- * method. If no names are provided, it should display "Hello, World!".
- * Usage: java HelloApp [name1] [name2] ... [nameN]
- * - If names are provided, it will display "Hello, [Name1], [Name2], ...!" to the
- *   console.
- * - If no names are provided, it will display "Hello, World!"
+ * This is the first step in the HelloApp journey, where we start with a basic
+ * "Hello, World!" program. The application consists of a single class with a
+ * main method that serves as the entry point for the program. The main method
+ * uses the System.out.println() function to print the message "Hello, World!"
+ * to the console. This application demonstrates fundamental Java concepts such
+ * as class declaration, the main method, and standard output.
  *
  * @author Developer Name
- * @version 7.0
- * @since UC1
+ * @version 1.0
  */
 
-// Key Concepts for HelloApp UC7:
-// 1. String.join() Method: A built-in method to concatenate strings with a delimiter
-// 2. Command-line Arguments: Accessing user input via args[] parameter
-// 3. Conditional Statements: Using if to check conditions
-// 4. Boolean Logic: Using logical conditions to control flow
-// 5. Array Length: Checking the number of command-line arguments
-// 6. Code Simplification: Reducing code complexity by leveraging built-in methods
-// 7. Readability and Maintainability: Writing cleaner code with fewer lines and less
-//    manual string manipulation
+/**
+ * Key Java Concepts Used:
+ * 1. Class Declaration - Defines a blueprint for objects
+ * 2. Main Method - Entry point for program execution
+ * 3. Static Keyword - Method belongs to the class, not instances
+ * 4. String Argument Array - Command-line arguments parameter
+ * 5. System.out.println() - Standard output stream for printing
+ */
 
 public class HelloApp {
     public static void main(String[] args) {
-        String names = "World";
-        if (args.length > 0) {
-            names = String.join(", ", args);
-        }
-        System.out.println("Hello, " + names + "!");
+        System.out.println("Hello, World!");
     }
 }
